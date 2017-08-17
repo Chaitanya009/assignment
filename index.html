@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css">
+      <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+
+      <link rel="stylesheet" href="style.css">
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+      <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js" charset="utf-8"></script>
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="" style="padding:30px 10px 0px 30px;position:fixed">
+      <button type="button" class="btn" style="height:35px;;background-color:#BDBDBD" id="show">Show Dialog Box</button>
+    </div>
+
+    <div class="" id="box">
+      <div class="box container" style="margin: 6% 10% 0% 25%;border: 1px solid #E0E0E0">
+        <div class="cancel">
+          <i class="material-icons" style="float: right;margin-top: -35px;color:#757575;cursor:pointer" id="cancel">close</i>
+        </div>
+        <div class="">
+          <p style="font-size: 2.2em;color: #42A5F5;margin-top: -10px">Select an Employee</p>
+        </div>
+        <div class="" style="margin-top: 20px">
+          <label class="mdl-checkbox mdl-js-checkbox" for="checkbox1">
+             <input type="checkbox" id="checkbox1" class="mdl-checkbox__input" checked style="color:#42A5F5">
+             <span class="mdl-checkbox__label">Send welcome email to employee</span>
+          </label>
+        </div>
+        <div class="">
+          <p style="margin-top: 20px;font-size:1.2em">Select a Team in the Organisation</p>
+        </div>
+        <div class="">
+          <input list="browsers" name="myBrowser" class="form-control" placeholder="Select Team" id="teamdrop" style="width: 100%;height:40px;background-color:#BDBDBD;border:none;padding-left:10px"/>
+            <datalist id="browsers">
+              <option value="Engineering">
+              <option value="Executive">
+              <option value="Finance">
+              <option value="Sales">
+            </datalist>
+        </div>
+        <div class="">
+          <p style="margin-top: 20px;font-size:1.2em">Select an Employee</p>
+        </div>
+        <div class="">
+          <input list="employ" name="myBrowser" class="form-control" placeholder="Select Employees" id="employees" style="width: 100%;height:40px;background-color:#BDBDBD;border:none;padding-left:10px;"/>
+        </div>
+        <div class="" style="margin-top: 30px">
+          <button type="button" class="btn" style="float:right;height:35px;width:100px;background-color:#42A5F5" id="ok" onclick="check()">OK</button>
+          <button type="button" class="btn cancel" style="float:right;margin: 0px 10px 0px 0px;height:35px;width:100px;background-color:#BDBDBD">Cancel</button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

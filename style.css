@@ -1,0 +1,20 @@
+html{
+  font-family: arial;
+}
+.position{
+  margin-top: 60px;
+  float: right;
+  right: 100px
+}
+.box{
+  padding-top: 50px;
+  background-color: #EEEEEE;
+  height: 430px;
+  width: 600px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
+  border: 1px solid black;
+}
+#team{
+  width: 100%;
+
+}
